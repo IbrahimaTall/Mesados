@@ -9,6 +9,6 @@ if `narg' != 1 {
     display "{error: Précisez la taille de l'échantillon}"
     exit 201
 }
-else {
+if "`replace'" != "" & "`generate'" != "" {
     
 }    
