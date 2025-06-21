@@ -10,5 +10,5 @@ if `narg' != 1 {
     exit 201
 }
 if "`replace'" != "" & "`generate'" != "" {
-    
+    display "{error: Choisissez entre {bf: replace} et {bf: generate}}"
 }    
