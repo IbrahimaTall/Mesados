@@ -3,7 +3,7 @@ capture drop systemic.ado
 program define systemic, rclass byable(recall)
 version 14
 syntax anything(id="taille population") [, generate(string)]
-tempname i j pas premier
+tempname i j pas premier tt
 local `i': word count `anything'
 local `j': word count `generate'
 if ``i'' != 1 | ``j'' > 1 {
@@ -15,7 +15,8 @@ if _rc {
 	display "{error: La taille doit être en entier}"
 	exit 202
 }
-local `pas' = ceil(_N / `anything')
+local `tt' = _N
+local `pas' = ceil(``tt'' / `anything')
 local `premier' = ceil(runiform() * ``pas'')
 if "`generate'" != "" {
 	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
