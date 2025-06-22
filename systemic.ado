@@ -2,7 +2,7 @@
 capture drop systemic.ado
 program define systemic, rclass byable(recall)
 version 14
-syntax anything(id="taille population")[, replace generate(varname)]
+syntax anything(id="taille population") [, replace generate(varname)]
 tempname narg
 local narg: word count `anything'
 if `narg' != 1 {
