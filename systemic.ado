@@ -7,8 +7,8 @@ tempname i j pas premier
 local `i': word count `anything'
 local `j': word count `generate'
 if `i' != 1 | `j' != 1 {
-    display "{error: Mauvaise spécification voir {help systemic:l'aide de systemic}}"
-    exit 201
+	display "{error: Mauvaise spécification voir {help systemic:l'aide de systemic}}"
+	exit 201
 }
 capture confirm number `anything'
 if _rc {
@@ -18,6 +18,10 @@ if _rc {
 local `pas' = ceil(_N/``taille'')
 local `premier' = ceil(runiform() * ``pas'')
 if "`generate'" != "" {
-    display "{error: Choisissez entre {bf: replace} et {bf: generate}}"
-    exit 202
-}    
+	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
+}
+else {
+	keep if mod(_n - ``premier'', ``pas'') == 0
+}
+return scalar pas = ``pas''
+end
