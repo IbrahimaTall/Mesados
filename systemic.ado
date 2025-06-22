@@ -7,7 +7,7 @@ tempname i j pas premier taille
 local `i': word count `anything'
 local `j': word count `generate'
 if `i' != 1 | `j' != 1 {
-    display "{error: Précisez la taille de l'échantillon}"
+    display "{error: Mauvaise spécification voir {help systemic:l'aide de systemic}}"
     exit 201
 }
 if "`replace'" != "" & "`generate'" != "" {
