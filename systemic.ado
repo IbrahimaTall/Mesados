@@ -6,7 +6,7 @@ syntax anything(id="taille population") [, generate(string)]
 tempname i j pas premier
 local `i': word count `anything'
 local `j': word count `generate'
-if ``i'' != 1 | ``j'' != 1 {
+if ``i'' != 1 | ``j'' > 1 {
 	display "{error: Mauvaise spécification voir {help systemic:l'aide de systemic}}"
 	exit 201
 }
@@ -15,7 +15,7 @@ if _rc {
 	display "{error: La taille doit être en entier}"
 	exit 202
 }
-local `pas' = ceil(_N/``taille'')
+local `pas' = ceil(_N / `anything')
 local `premier' = ceil(runiform() * ``pas'')
 if "`generate'" != "" {
 	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
