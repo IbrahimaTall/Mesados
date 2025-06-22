@@ -16,8 +16,20 @@ if _rc {
 	exit 202
 }
 local `tt' = _N
-local `pas' = ceil(``tt'' / `anything')
-local `premier' = ceil(runiform() * ``pas'')
+local `pas' = round(``tt'' / `anything', 1)
+local `premier' = round(runiform() * ``pas'', 1)
+if ``pas'' == 0 {
+	display "{error: Taille incorrecte}"
+	exit 203
+}
+if ``pas'' == 1 {
+	if "`generate'" != "" {
+		quietly generate `generate' = _n <= `anything'
+	}
+	else {
+		keep if  _n <= `anything'
+	}
+}
 if "`generate'" != "" {
 	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
 }
