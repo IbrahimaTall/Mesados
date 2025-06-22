@@ -4,7 +4,7 @@ program define systemic, rclass byable(recall)
 version 14
 syntax anything(id="taille population") [, replace generate(string)]
 tempname i j pas premier taille
-local narg: word count `anything'
+local `i': word count `anything'
 if `narg' != 1 {
     display "{error: Précisez la taille de l'échantillon}"
     exit 201
