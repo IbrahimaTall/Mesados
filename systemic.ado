@@ -15,6 +15,8 @@ if _rc {
 	display "{error: La taille doit être en entier}"
 	exit 202
 }
+local `pas' = ceil(_N/``taille'')
+local `premier' = ceil(runiform() * ``pas'')
 if "`generate'" != "" {
     display "{error: Choisissez entre {bf: replace} et {bf: generate}}"
     exit 202
