@@ -2,7 +2,7 @@
 capture drop systemic.ado
 program define systemic, rclass byable(recall)
 version 14
-syntax anything(id="taille population") [, replace generate(string)]
+syntax anything(id="taille population") [, generate(string)]
 tempname i j pas premier
 local `i': word count `anything'
 local `j': word count `generate'
@@ -15,7 +15,7 @@ if _rc {
 	display "{error: La taille doit être en entier}"
 	exit 202
 }
-if "`replace'" != "" & "`generate'" != "" {
+if "`generate'" != "" {
     display "{error: Choisissez entre {bf: replace} et {bf: generate}}"
     exit 202
 }    
