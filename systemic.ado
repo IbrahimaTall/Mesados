@@ -28,6 +28,7 @@ if ``pas'' == 1 {
 	}
 	else {
 		keep if  _n <= `anything'
+		exit 0
 	}
 }
 if "`generate'" != "" {
