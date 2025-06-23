@@ -4,7 +4,7 @@ program define systemic, rclass byable(recall)
 version 14
 syntax anything(id="taille population") [, generate(string)]
 tempname i j pas premier tt
-
+tampvar Un Cum
 local `i': word count `anything'
 local `j': word count `generate'
 if ``i'' != 1 | ``j'' > 1 {
