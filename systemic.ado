@@ -16,11 +16,15 @@ if _rc {
 	exit 202
 }
 local `tt' = _N
+if ``tt'' == 0 | `anything' == 0 {
+	display "{error: Impossible de faire le tirage}"
+	exit 203
+}
 local `pas' = round(``tt'' / `anything', 1)
 local `premier' = round(runiform() * ``pas'', 1)
 if ``pas'' == 0 {
 	display "{error: Taille incorrecte}"
-	exit 203
+	exit 204
 }
 if ``pas'' == 1 {
 	if "`generate'" != "" {
@@ -28,7 +32,7 @@ if ``pas'' == 1 {
 	}
 	else {
 		keep if  _n <= `anything'
-		exit 0
+		exit
 	}
 }
 if "`generate'" != "" {
