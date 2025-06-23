@@ -33,7 +33,7 @@ if "`generate'" != "" {
 	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0 & `Cum' <= `anything'
 }
 else {
-	keep if mod(_n - ``premier'', ``pas'') == 0
+	keep if mod(_n - ``premier'', ``pas'') == 0 & `Cum' <= `anything'
 }
 return scalar pas = ``pas''
 end
