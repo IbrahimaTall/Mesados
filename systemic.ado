@@ -30,7 +30,7 @@ if ``pas'' == 0 {
 generate `Un' = 1
 generate `Cum' = sum(`Un')
 if "`generate'" != "" {
-	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
+	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0 & `Cum' <= `anything'
 }
 else {
 	keep if mod(_n - ``premier'', ``pas'') == 0
