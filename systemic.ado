@@ -26,15 +26,6 @@ if ``pas'' == 0 {
 	display "{error: Taille incorrecte}"
 	exit 204
 }
-if ``pas'' == 1 {
-	if "`generate'" != "" {
-		quietly generate `generate' = _n <= `anything'
-	}
-	else {
-		keep if  _n <= `anything'
-		exit
-	}
-}
 if "`generate'" != "" {
 	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0
 }
