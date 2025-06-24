@@ -33,7 +33,7 @@ if "`generate'" != "" {
 	quietly generate `generate' = `Un' & `Cum' <= `anything'
 }
 else {
-	keep if  & `Cum' <= `anything'
+	keep if `Un' & `Cum' <= `anything'
 }
 return scalar pas = ``pas''
 end
