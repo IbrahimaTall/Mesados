@@ -27,13 +27,13 @@ if ``pas'' == 0 {
 	display "{error: Taille incorrecte}"
 	exit 204
 }
-generate `Un' = 1
+generate `Un' = mod(_n - ``premier'', ``pas'') == 0
 generate `Cum' = sum(`Un')
 if "`generate'" != "" {
-	quietly generate `generate' = mod(_n - ``premier'', ``pas'') == 0 & `Cum' <= `anything'
+	quietly generate `generate' = `Un' & `Cum' <= `anything'
 }
 else {
-	keep if mod(_n - ``premier'', ``pas'') == 0 & `Cum' <= `anything'
+	keep if  & `Cum' <= `anything'
 }
 return scalar pas = ``pas''
 end
