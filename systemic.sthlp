@@ -26,3 +26,4 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {dlgtab:Main}
 
 {phang}{it:#taille}: indique la taille de l'échantillon. C'est un nombre entier non nul. {p_end}
+{phang}{opt generate(variable)}: permet d'identifier les unités séléctionnées par 1 et celles non tirées par 0.
