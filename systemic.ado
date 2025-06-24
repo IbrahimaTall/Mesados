@@ -31,6 +31,7 @@ generate `Un' = mod(_n - ``premier'', ``pas'') == 0
 generate `Cum' = sum(`Un')
 if "`generate'" != "" {
 	quietly generate `generate' = `Un' & `Cum' <= `anything'
+	label var `generate' "Tirage systématique: 1 = Unités tirées"
 }
 else {
 	keep if `Un' & `Cum' <= `anything'
