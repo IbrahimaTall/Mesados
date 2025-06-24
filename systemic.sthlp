@@ -16,3 +16,5 @@
 {p 4 6 2} Cette commande ne doit pas être combinée avec {cmd:by()}.{p_end}
 
 {title:Description}
+
+{pstd}{cmd:systemic}: réalise un tirage aléatoire d'un échantillon dont la {it:taille} est précisée.{break}
