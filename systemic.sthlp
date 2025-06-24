@@ -22,3 +22,5 @@ Les unités séléctionnées, sont identifiées au moyen d'une {it:variable} ave
 Lorsque cette option n'est pas précisée, la base est remplée par l'échantillon tiré.
 
 {title:Options}
+
+{dlgtab:Main}
