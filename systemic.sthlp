@@ -10,3 +10,5 @@
 {p2colreset}{...}
 
 {title:Syntax}
+
+{pstd} {cmd:systemic} {it:#taille} [{cmd:,} {cmd:generate}{cmd:(}{it:variable}{cmd:)}]
