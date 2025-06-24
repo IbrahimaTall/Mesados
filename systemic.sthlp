@@ -19,3 +19,4 @@
 
 {pstd}{cmd:systemic}: réalise un tirage aléatoire d'un échantillon dont la {it:taille} est précisée.{break}
 Les unités séléctionnées, sont identifiées au moyen d'une {it:variable} avec l'option {it:generate()}.{break}
+Lorsque cette option n'est pas précisée, la base est remplée par l'échantillon tiré.
