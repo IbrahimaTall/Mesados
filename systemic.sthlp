@@ -24,3 +24,5 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {title:Options}
 
 {dlgtab:Main}
+
+{phang}{it:#taille}: indique la taille de l'échantillon. C'est un nombre entier non nul. {p_end}
