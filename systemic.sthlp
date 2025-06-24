@@ -14,3 +14,5 @@
 {pstd} {cmd:systemic} {it:#taille} [{cmd:,} {cmd:generate}{cmd:(}{it:variable}{cmd:)}]
 
 {p 4 6 2} Cette commande ne doit pas être combinée avec {cmd:by()}.{p_end}
+
+{title:Description}
