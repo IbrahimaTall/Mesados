@@ -29,3 +29,5 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {phang}{opt generate(variable)}: permet d'identifier les unités séléctionnées par 1 et celles non tirées par 0.
 
 {synoptline}
+
+{title:Example}
