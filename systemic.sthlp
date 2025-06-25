@@ -39,3 +39,4 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {title:Author}
 
 {phang}Ibrahima Tall, Ingénieur statisticien économiste (ISE){break}
+datasciences4ise@gmail.com {break}
