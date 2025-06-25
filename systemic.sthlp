@@ -41,3 +41,5 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {phang}Ibrahima Tall, Ingénieur statisticien économiste (ISE){break}
 datasciences4ise@gmail.com {break}
 Voir la page {browse "https://www.linkedin.com/in/statnengineer/":linkdin} de Ibrahima Tall. {p_end}
+
+{title:Voir Aussi}
