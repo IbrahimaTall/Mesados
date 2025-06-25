@@ -31,3 +31,5 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {synoptline}
 
 {title:Example}
+
+{phang}{stata "sysuse auto":sysuse auto}{p_end}
