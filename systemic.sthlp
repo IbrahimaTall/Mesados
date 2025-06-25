@@ -45,3 +45,4 @@ Voir la page {browse "https://www.linkedin.com/in/statnengineer/":linkdin} de Ib
 {title:Voir Aussi}
 
 {psee}
+Les commandes {manhelp sample R} et {search gsample: gsample}.
