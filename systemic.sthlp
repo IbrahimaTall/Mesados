@@ -46,3 +46,4 @@ Voir la page {browse "https://www.linkedin.com/in/statnengineer/":linkdin} de Ib
 
 {psee}
 Les commandes {manhelp sample R} et {search gsample: gsample}.
+{p_end}
