@@ -34,3 +34,4 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 
 {phang}{stata "sysuse auto":sysuse auto}{p_end}
 {phang}{stata "systemic 10, generate(selected)":systemic 10, generate(choix)}{p_end}
+{phang}{stata "tabulate selected" :tabulate selected}{p_end}
