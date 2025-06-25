@@ -37,3 +37,5 @@ Lorsque cette option n'est pas précisée, la base est remplée par l'échantill
 {phang}{stata "tabulate selected" :tabulate selected}{p_end}
 
 {title:Author}
+
+{phang}Ibrahima Tall, Ingénieur statisticien économiste (ISE){break}
