@@ -43,3 +43,5 @@ datasciences4ise@gmail.com {break}
 Voir la page {browse "https://www.linkedin.com/in/statnengineer/":linkdin} de Ibrahima Tall. {p_end}
 
 {title:Voir Aussi}
+
+{psee}
